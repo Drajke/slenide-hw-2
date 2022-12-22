@@ -16,9 +16,8 @@ public class PageHaveText  {
     void WikiTest(){
         Selenide.open("https://github.com/selenide/selenide");
         Selenide.$("#wiki-tab").click();
-        Selenide.$("#wiki-pages-box button").click();
-        Selenide.$("#wiki-pages-box").shouldHave(text("SoftAssertions"));
-        Selenide.$("#wiki-pages-box").$(byText("SoftAssertions")).click();
+        Selenide.$(byText("Show 2 more pages…")).click();
+        Selenide.$("#wiki-pages-box").shouldHave(text("SoftAssertions")).click();
         Selenide.$("#wiki-body").$(byText("3. Using JUnit5 extend test class:"));
     }
 }
