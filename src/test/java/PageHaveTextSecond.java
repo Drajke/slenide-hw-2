@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class PageHaveTextSecond {
     //На главной странице GitHub выберите меню Solutions -> Enterprize с помощью команды hover для Solutions.
-    // Убедитесь что загрузилась нужная страница (например что заголовок - "Build like the best."
+    // Убедитесь что загрузилась нужная страница, например что заголовок - "Build like the best."
     @Test
     void GitHoverTest() {
         Selenide.open("https://github.com/");
